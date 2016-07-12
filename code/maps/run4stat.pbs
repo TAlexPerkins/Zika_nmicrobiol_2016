@@ -1,0 +1,16 @@
+#!/bin/csh                                                                     
+
+#$ -r y
+#$  -o ../generated/OUT.log
+#$  -t 1-1000
+#$ -e ERR.log
+#$ -pe smp 4
+
+setenv R_LIBS /afs/crc.nd.edu/user/a/asiraj/R
+setenv R_LIBS  /afs/crc.nd.edu/user/a/asiraj/R/gdal
+setenv LD_LIBRARY_PATH  /afs/crc.nd.edu/user/a/asiraj/R/gdal/proj-4.9.1/lib:/opt/crc/scilib/blas/rhel6/gcc-4.4.7:/opt/crc/scilib/lapack/rhel6/gcc-4.4.7:/afs/crc.nd.edu/x86_64_linux/r/R/3.2.1/gcc-4.4.7/lib64/R/lib:/opt/crc/o/openmpi/1.8.7/gcc/4.4.7/lib/openmpi:/opt/crc/o/openmpi/1.8.7/gcc/4.4.7/lib:/afs/crc.nd.edu/user/a/asiraj/R/gdal/gdal-2.0.1/lib:/afs/crc.nd.edu/user/a/asiraj/R/gdal/rgdal/libs:/opt/crc/usr/local/lib
+
+echo "I ran on:"
+module load R/3.2.1-gcc
+cd /afs/crc.nd.edu/user/a/asiraj/zika/code
+R CMD BATCH 4_output_grids_stat_crc.R  ../generated/remoutz.$SGE_TASK_ID

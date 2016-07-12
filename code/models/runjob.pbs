@@ -1,0 +1,11 @@
+#!/bin/csh                                                                     
+
+#$ -r y
+#$ -q *@@perkins
+#$  -o ../OUT.log
+#$  -t 1
+#$ -e ../ERR.log
+#$ -pe smp 8
+
+module load bio/R/3.2.3-gcc
+R CMD BATCH script.R

@@ -1,0 +1,7 @@
+source('0_relationship_R0_AR.R')
+source('1_params_random_draws.R')
+source('2_fit_attackrate_random_draws.R')
+source('3_fig_infection_distributions.R')
+source('4_fit_attackrate_random_draws_stat.R')
+source('5_fig_infection_distributions_stat.R')
+source('6_fig_attackrate_relationships.R')
