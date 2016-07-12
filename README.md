@@ -14,8 +14,7 @@ All code contained within this repository is released under the [CRAPL v0.1 Lice
 
 The scripts in this folder produce Figures 3-5 and S1. More generally, they are used to fit relationships between seroprevalence from the 13 sites described in Table S1 and the covariates (i.e., temperature, economic index, *Aedes aegypti* occurrence probability) under both mechanistic and statistical model formulations. The outputs of these models are projected attack rates following the first wave of the epidemic. These scripts were run in the following order and made use of both a personal laptop (Mac OSX) and the University of Notre Dame's Center for Research Computing cluster [http://crc.nd.edu](http://crc.nd.edu).
 
-* `runjob.pbs`
-* `script.R`
+* `runjob.pbs` calls `script.R`, which calls the files below
 * `0_relationship_R0_AR.R`
 * `1_params_random_draws.R`
 * `2_fit_attackrate_random_draws.R`
