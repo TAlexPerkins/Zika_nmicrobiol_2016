@@ -3,7 +3,7 @@ Zika_nmicrobiol_2016
 
 This repository contains code used in the following paper.
 
-Perkins TA, Siraj AS, Ruktanonchai CW, Kraemer MUGK, Tatem AJ. (2016) **Model-based projections of Zika virus infections in childbearing women in the Americas**. *Nature Microbiology* XX:YY-ZZ. doi:[http://www.nature.com/nmicrobiol/](http://www.nature.com/nmicrobiol/)
+Perkins TA, Siraj AS, Ruktanonchai CW, Kraemer MUGK, Tatem AJ. (2016) **Model-based projections of Zika virus infections in childbearing women in the Americas**. *Nature Microbiology* 1:16126. [http://www.nature.com/articles/nmicrobiol2016126](http://www.nature.com/articles/nmicrobiol2016126)
 
 All code contained within this repository is released under the [CRAPL v0.1 License](http://matt.might.net/articles/crapl/). Because of the large sizes of many files used in the paper, we have included only a subset of data.
 
